@@ -1,0 +1,20 @@
+#toggle_light {
+    order: 2;
+    margin-left: 60%;
+}
+
+#add_btn_light {
+    order: 1;
+    margin-left: 12%;
+}
+
+#main-body {
+    display: grid;
+    grid-template-columns: 20fr 60fr 20fr;
+    background-color: rgb(183, 215, 243);
+    margin: 40px 40px 40px 40px;
+    height: fit-content;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 40px;
+}

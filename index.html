@@ -1,0 +1,114 @@
+<!--fially add a mail reminder functionality as well-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Too do List</title>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style_dark.css">
+    <script src="https://unpkg.com/vue@next" defer></script>
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+    <div id="main-container">
+        <div :class="[{body_dark:Dark_val},{body_light:Light_val}]">
+            <div :class="[{container_dark:Dark_val},{container_light:Light_val}]">
+                <h1 :class="[{neonText_dark:Dark_val}]">
+                    Your upcoming <br> Tasks
+                </h1>
+            </div>
+
+
+
+            <!--make these buttons inline-->
+            <div class="btn_container_dark">
+                <div :class="[{buttons_dark:Dark_val},{buttons_light:Light_val}]" id="add_btn" @click='add_task_fn'>
+                    <h1>
+                        Add <span class="first">a</span> task
+                    </h1>
+                </div>
+                <div :class="[{buttons_dark:Dark_val},{buttons_light:Light_val}]" id="toggle" @click='toggle_fn'>
+                    <h1>
+
+                        Tog<span class="first">g</span>le
+                    </h1>
+                </div>
+            </div>
+
+            <!--to toggle from light to dark mode-->
+            <div id="main-body">
+                <div :class="[{Task_today_dark:Dark_val},{Task_today_light:Light_val}]">
+                    <h2>Today</h2>
+                    <div class="scroll-hide" :class="[{today_task_dark:Dark_val},{today_task_light:Light_val}]">
+                        <ul style="list-style-type: none">
+                            <!--leverage vue indexing facility here and sorrt the items as per there importance
+                        and then display them along with thier indexes-->
+                            <li v-if="today_length" v-for="task in today_list">
+                                <span :class="[{title_dark:Dark_val},{title_light:Light_val}]">{{ task.Title }}</span>
+                                <span :class="[{importance_dark:Dark_val},{importance_light:Light_val}]">{{ task.Importance }}</span>
+                            </li>
+                            <li v-else>
+                                <span :class="[{title_dark:Dark_val},{title_light:Light_val}]">No task</span>
+                                <span :class="[{importance_dark:Dark_val},{importance_light:Light_val}]">Today</span>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                </div>
+                <!--this section will display the tasks schdeuled for today-->
+                <div :class="[{container_dark:Dark_val},{container_light:Light_val}]">
+                    <!--this will display all the tasks-->
+                    <ul style="list-style-type: none">
+                        <h2>Your upcoming tasks</h2>
+                        <li v-if="task_length" v-for="task in task_list">
+                            <!--run a v-for in this li for cycling through all the tasks-->
+                            <div @dblclick="delete_event(task.Title)" :class="[{task_dark:Dark_val},{task_light:Light_val}]">
+                                <h3>{{ task.Title }}</h3>
+                                <strong><h4>{{ task.Date }}</h4></strong>
+                                <strong><h4>{{ task.Importance }}</h4></strong>
+                                <p>{{ task.Description }}</p>
+
+                            </div>
+                        </li>
+                        <li v-else>
+                            <!--run a v-for in this li for cycling through all the tasks-->
+                            <div :class="[{task_dark:Dark_val},{task_light:Light_val}]">
+                                <h3>No task added</h3>
+
+                            </div>
+                        </li>
+                        <!--use the indexing functionality as well to display the latest task first reverse of push function-->
+                        <!--add a v-for in this section for cycling through available to do tasks-->
+                        <!---and on each task add a X button to remove it and before remving ask for confirmation on a side menu-->
+
+                    </ul>
+                </div>
+                <div :class="[{add_task_dark:Dark_val},{add_task_light:Light_val}]" :style="{display:form_display}">
+                    <h2>Add Task</h2>
+                    <div :class="[{form_dark:Dark_val},{form_light:Light_val}]">
+                        <form action="#" @submit.prevent="form_submit_fn">
+                            <input type="text" id="name" name="name" placeholder="Title" v-model="title_val">
+                            <input type="date" data-date-inline-picker="true" id="date" name="date" placeholder="Deadline" v-model="date_val">
+                            <input type="text" id="importance" name="imporStance" placeholder="Importance" v-model="importance_val">
+                            <input type="text" id="desc" name="desc" placeholder="Add a description" v-model="description_val">
+                            <button type="submit" @clidk='form_submit_fn'>Add Task</button>
+                        </form>
+                    </div>
+                </div>
+                <!--this will be a form which will be displayed only when we need to add a task
+                    and after submittinh the form it will be invisible again-->
+            </div>
+        </div>
+    </div>
+
+    <!--this will pop up a form on same screen-->
+
+</body>
+
+</html>

@@ -1,0 +1,155 @@
+.container {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#btn_container {
+    display: grid;
+    grid-template-columns: 20fr 20fr;
+    margin-top: 10px;
+}
+
+#toggle {
+    order: 2;
+    margin-left: 60%;
+}
+
+#add_btn {
+    order: 1;
+    margin-left: 12%;
+}
+
+.buttons {
+    border: 2px solid transparent;
+    background-color: rgb(93, 178, 252);
+    border-radius: 40px;
+    padding: 20px;
+    font-size: large;
+    font-weight: bolder;
+    box-shadow: 6px 6px 10px;
+    width: fit-content;
+}
+
+.buttons h1 {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.buttons:hover {
+    box-shadow: 4px 4px 4px;
+    background-color: rgb(46, 153, 247);
+}
+
+#main-body {
+    display: grid;
+    grid-template-columns: 20fr 60fr 20fr;
+    background-color: rgb(183, 215, 243);
+    margin: 40px 40px 40px 40px;
+    height: fit-content;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 40px;
+}
+
+#Task_today {}
+
+#Task_today h2,
+#container h2,
+#add_task h2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+#container ul li {
+    border: 2px solid transparent;
+    background-color: rgb(139, 195, 245);
+    border-radius: 40px;
+    margin: 20px 10px 20px 10px;
+    width: 50%;
+    margin-left: 25%;
+}
+
+#container ul li h3 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#container ul li h4 {
+    font-weight: 900;
+    font-size: 20px;
+}
+
+#container ul li p {
+    font-weight: 700;
+    font-size: 15px;
+}
+
+#container ul li:hover {
+    background-color: rgb(93, 178, 252);
+}
+
+.task {
+    text-align: center;
+}
+
+#form input {
+    margin: 50px 20% 20% 0px;
+    font-family: "Vibur", sans-serif;
+    font-size: 25px;
+    font-weight: 800;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid rgb(33, 150, 252);
+    color: rgb(30, 146, 247);
+}
+
+#form textarea:focus,
+input:focus {
+    outline: none;
+}
+
+#form input::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(33, 150, 252);
+    opacity: 1;
+    /* Firefox */
+}
+
+#form button {
+    margin-left: 30%;
+    background-color: transparent;
+    border: 2px solid rgb(33, 150, 252);
+    border-radius: 40px;
+    color: rgb(33, 150, 252);
+    padding: 20px;
+    font-size: 20px;
+    box-shadow: 2px 2px 2px 2px rgb(33, 150, 252);
+}
+
+#form button:focus {
+    box-shadow: 1px 1px 1px 1px rgb(33, 150, 252);
+    color: black;
+}
+
+#today_task {
+    height: 400px;
+    overflow-y: auto;
+}
+
+#today-task ul {
+    margin: 10%;
+}
+
+#today_task ul li {
+    margin: 20%;
+}
+
+.title {
+    font-size: 30px;
+}
+
+.importance {
+    font-size: 20px;
+}

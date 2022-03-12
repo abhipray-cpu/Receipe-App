@@ -1,0 +1,534 @@
+    .neonText_dark {
+        color: #fff;
+        text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #f09, 0 0 82px #f09, 0 0 92px #f09, 0 0 102px #f09, 0 0 151px #f09;
+    }
+    /* Additional styling */
+    
+    .body_dark {
+        font-size: 18px;
+        font-family: "Vibur", sans-serif;
+        background-color: #010a01;
+        border: 2px solid transparent;
+        border-radius: 40px;
+    }
+    
+    .container_dark h1 {
+        text-align: center;
+        font-size: 40px;
+        font-weight: 700;
+        animation: pulsate 0.11s ease-in-out infinite alternate;
+    }
+    
+    @keyframes pulsate {
+        100% {
+            text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #f09, 0 0 80px #f09, 0 0 90px #f09, 0 0 100px #f09, 0 0 150px #f09;
+        }
+        0% {
+            text-shadow: 0 0 4px #fff, 0 0 10px #fff, 0 0 18px #fff, 0 0 38px #f09, 0 0 73px #f09, 0 0 80px #f09, 0 0 94px #f09, 0 0 140px #f09;
+        }
+    }
+    
+    .btn_container_dark {
+        display: grid;
+        grid-template-columns: 20fr 20fr;
+    }
+    
+    #toggle {
+        order: 2;
+        margin-left: 60%;
+    }
+    
+    #add_btn {
+        order: 1;
+        margin-left: 12%;
+    }
+    
+    #main-body {
+        display: grid;
+        grid-template-columns: 20fr 60fr 20fr;
+        background-color: transparent;
+        margin: 40px 40px 40px 40px;
+        height: fit-content;
+        padding: 20px;
+        border: 2px solid transparent;
+        border-radius: 40px;
+    }
+    
+    .Task_today_dark {}
+    
+    .Task_today_dark h2,
+    .container_dark h2,
+    .add_task_dark h2 {
+        text-align: center;
+        font-weight: bold;
+        font-size: 25px;
+        color: rgb(245, 2, 83);
+    }
+    
+    .container_dark ul li {
+        border: 2px solid transparent;
+        background-color: rgb(14, 0, 0);
+        box-shadow: 2px 2px 2px 2px rgb(245, 2, 83);
+        border-radius: 40px;
+        margin: 20px 10px 20px 10px;
+        width: 50%;
+        margin-left: 25%;
+    }
+    
+    .container_dark ul li h3 {
+        font-size: 30px;
+        font-weight: bold;
+        color: white;
+    }
+    
+    .container_dark ul li h4 {
+        font-weight: 900;
+        font-size: 20px;
+        color: white;
+    }
+    
+    .container_dark ul li p {
+        font-weight: 700;
+        font-size: 15px;
+        color: white;
+    }
+    
+    .container_dark ul li:hover {
+        background-color: rgb(243, 14, 52);
+    }
+    
+    .container_dark ul li:hover h3,
+    .container_dark ul li:hover h4,
+    .container_dark ul li:hover p {
+        color: black;
+    }
+    
+    .task_dark {
+        text-align: center;
+    }
+    
+    .add_task_dark {}
+    
+    .buttons_dark {
+        text-align: center;
+        border-radius: 8px;
+        border: 3px solid transparent;
+        cursor: pointer;
+        width: fit-content;
+        padding: 20px;
+    }
+    
+    .buttons_dark:hover {
+        animation: border-flicker 2s linear forwards;
+    }
+    
+    .buttons_dark h1 {
+        font-family: "Open Sans";
+        font-weight: 300;
+        font-size: 2.9em;
+        color: rgba(250, 3, 106, 0.5);
+        font-size: 20px;
+    }
+    
+    .buttons_dark:hover h1 {
+        animation: text-flicker 2s linear forwards;
+    }
+    
+    .buttons_dark:hover .first {
+        animation: letter-flicker 3s linear infinite;
+    }
+    
+    @keyframes text-flicker {
+        2% {
+            color: rgb(230, 0, 120);
+            text-shadow: 0 0 15px rgb(230, 0, 120);
+        }
+        3% {
+            color: rgba(120, 0, 50, .5);
+            text-shadow: none;
+        }
+        6% {
+            color: rgb(230, 0, 120);
+            text-shadow: 0 0 15px rgb(230, 0, 120);
+        }
+        9% {
+            color: rgba(120, 0, 50, .5);
+            text-shadow: none;
+        }
+        11% {
+            color: rgb(230, 0, 120);
+            text-shadow: 0 0 15px rgb(230, 0, 120);
+        }
+        14% {
+            color: rgba(120, 0, 50, .5);
+            text-shadow: none;
+        }
+        18% {
+            color: rgb(230, 0, 120);
+            text-shadow: 0 0 15px rgb(230, 0, 120);
+        }
+        32% {
+            color: rgb(230, 0, 120);
+            text-shadow: 0 0 15px rgb(230, 0, 120);
+        }
+        33% {
+            color: rgba(120, 0, 50, .5);
+            text-shadow: none;
+        }
+        37% {
+            color: rgb(230, 0, 120);
+            text-shadow: 0 0 15px rgb(230, 0, 120);
+        }
+        39% {
+            color: rgba(120, 0, 50, .5);
+            text-shadow: none;
+        }
+        43% {
+            color: rgb(230, 0, 120);
+            text-shadow: 0 0 15px rgb(230, 0, 120);
+        }
+        46% {
+            color: rgba(120, 0, 50, .5);
+            text-shadow: none;
+        }
+        47% {
+            color: rgb(230, 0, 120);
+            text-shadow: 0 0 15px rgb(230, 0, 120);
+        }
+        100% {
+            color: rgb(230, 0, 120);
+            text-shadow: 0 0 15px rgb(230, 0, 120);
+        }
+    }
+    
+    @keyframes letter-flicker {
+        2% {
+            color: rgb(230, 0, 120);
+            text-shadow: 0 0 15px rgb(230, 0, 120);
+        }
+        3% {
+            color: rgba(120, 0, 50, .5);
+            text-shadow: none;
+        }
+        6% {
+            color: rgb(230, 0, 120);
+            text-shadow: 0 0 15px rgb(230, 0, 120);
+        }
+        9% {
+            color: rgba(120, 0, 50, .5);
+            text-shadow: none;
+        }
+        11% {
+            color: rgb(230, 0, 120);
+            text-shadow: 0 0 15px rgb(230, 0, 120);
+        }
+        14% {
+            color: rgba(120, 0, 50, .5);
+            text-shadow: none;
+        }
+        18% {
+            color: rgb(230, 0, 120);
+            text-shadow: 0 0 15px rgb(230, 0, 120);
+        }
+        32% {
+            color: rgb(230, 0, 120);
+            text-shadow: 0 0 15px rgb(230, 0, 120);
+        }
+        33% {
+            color: rgba(120, 0, 50, .5);
+            text-shadow: none;
+        }
+        37% {
+            color: rgb(230, 0, 120);
+            text-shadow: 0 0 15px rgb(230, 0, 120);
+        }
+        39% {
+            color: rgba(120, 0, 50, .5);
+            text-shadow: none;
+        }
+        40% {
+            color: rgb(230, 0, 120);
+            text-shadow: 0 0 15px rgb(230, 0, 120);
+        }
+        100% {
+            color: rgb(230, 0, 120);
+            text-shadow: 0 0 15px rgb(230, 0, 120);
+        }
+    }
+    
+    @keyframes border-flicker {
+        2% {
+            border: 3px solid rgb(0, 180, 230);
+            box-shadow: 0 0 15px -1px rgb(0, 180, 230), 0 0 12px -1px rgb(0, 180, 230) inset;
+        }
+        3% {
+            border: 3px solid rgb(0, 40, 70);
+            box-shadow: none;
+        }
+        5% {
+            border: 3px solid rgb(0, 180, 230);
+            box-shadow: 0 0 15px -1px rgb(0, 180, 230), 0 0 12px -1px rgb(0, 180, 230) inset;
+        }
+        6% {
+            border: 3px solid rgb(0, 40, 70);
+            box-shadow: none;
+        }
+        7% {
+            border: 3px solid rgb(0, 180, 230);
+            box-shadow: 0 0 15px -1px rgb(0, 180, 230), 0 0 12px -1px rgb(0, 180, 230) inset;
+        }
+        9% {
+            border: 3px solid rgb(0, 40, 70);
+            box-shadow: none;
+        }
+        13% {
+            border: 3px solid rgb(0, 180, 230);
+            box-shadow: 0 0 15px -1px rgb(0, 180, 230), 0 0 12px -1px rgb(0, 180, 230) inset;
+        }
+        16% {
+            border: 3px solid rgb(0, 40, 70);
+            box-shadow: none;
+        }
+        18% {
+            border: 3px solid rgb(0, 180, 230);
+            box-shadow: 0 0 15px -1px rgb(0, 180, 230), 0 0 12px -1px rgb(0, 180, 230) inset;
+        }
+        22% {
+            border: 3px solid rgb(0, 40, 70);
+            box-shadow: none;
+        }
+        34% {
+            border: 3px solid rgb(0, 180, 230);
+            box-shadow: 0 0 15px -1px rgb(0, 180, 230), 0 0 12px -1px rgb(0, 180, 230) inset;
+        }
+        36% {
+            border: 3px solid rgb(0, 40, 70);
+            box-shadow: none;
+        }
+        54% {
+            border: 3px solid rgb(0, 180, 230);
+            box-shadow: 0 0 15px -1px rgb(0, 180, 230), 0 0 12px -1px rgb(0, 180, 230) inset;
+        }
+        100% {
+            border: 3px solid rgb(0, 180, 230);
+            box-shadow: 0 0 15px -1px rgb(0, 180, 230), 0 0 12px -1px rgb(0, 180, 230) inset;
+        }
+    }
+    
+    .form_dark input {
+        margin: 50px 20% 20% 0px;
+        font-family: "Vibur", sans-serif;
+        font-size: 20px;
+        font-weight: 800;
+        background-color: transparent;
+        border: none;
+        border-bottom: 2px solid rgb(245, 2, 83);
+        color: rgb(245, 2, 83);
+    }
+    
+    .form_dark textarea:focus,
+    input:focus {
+        outline: none;
+    }
+    
+    .form_dark input[type="date"]::-webkit-calendar-picker-indicator {
+        cursor: pointer;
+        border-radius: 4px;
+        margin-right: 2px;
+        opacity: 0.6;
+        filter: invert(0.8);
+    }
+    
+    .form_dark input[type="date"]::-webkit-calendar-picker-indicator:hover {
+        opacity: 1
+    }
+    
+    .form_dark input::placeholder {
+        /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: rgb(245, 2, 83);
+        opacity: 1;
+        /* Firefox */
+    }
+    
+    .form_dark button {
+        margin-left: 30%;
+        background-color: transparent;
+        border: 2px solid rgb(245, 2, 83);
+        border-radius: 40px;
+        color: rgb(245, 2, 83);
+        padding: 20px;
+        font-size: 20px;
+        box-shadow: 2px 2px 2px 2px rgb(245, 2, 83);
+    }
+    
+    .form_dark button:focus {
+        box-shadow: 1px 1px 1px 1px rgb(245, 2, 83);
+        color: white;
+    }
+    
+    .today_task_dark {
+        height: 400px;
+        overflow-y: auto;
+    }
+    
+    .today-task_dark ul {
+        margin: 10%;
+    }
+    
+    .today_task_dark ul li {
+        margin: 20%;
+    }
+    
+    .title_dark {
+        font-size: 30px;
+        margin-right: 10px;
+        color: rgb(245, 2, 83);
+    }
+    
+    .importance_dark {
+        font-size: 20px;
+        color: rgb(245, 2, 83);
+    }
+    /*Code from here onward contains styling for the light theme*/
+    
+    .body_light {
+        background-color: aliceblue;
+        border: 2px solid transparent;
+        border-radius: 40px;
+    }
+    
+    .container_light {
+        text-align: center;
+        font-size: 20px;
+        font-weight: 700;
+    }
+    
+    #btn_container_light {
+        display: grid;
+        grid-template-columns: 20fr 20fr;
+        margin-top: 10px;
+    }
+    
+    .buttons_light {
+        border: 2px solid transparent;
+        background-color: rgb(93, 178, 252);
+        border-radius: 40px;
+        padding: 20px;
+        font-size: large;
+        font-weight: bolder;
+        box-shadow: 6px 6px 10px;
+        width: fit-content;
+    }
+    
+    .buttons_light h1 {
+        font-size: 20px;
+        font-weight: bolder;
+    }
+    
+    .buttons_light:hover {
+        box-shadow: 4px 4px 4px;
+        background-color: rgb(46, 153, 247);
+    }
+    
+    .Task_today_light {}
+    
+    .today_task_light {
+        height: 400px;
+        overflow-y: auto;
+    }
+    
+    .today-task_light ul {
+        margin: 10%;
+    }
+    
+    .today_task_light ul li {
+        margin: 20%;
+    }
+    
+    .title_light {
+        font-size: 30px;
+        margin-right: 20px;
+    }
+    
+    .importance_light {
+        font-size: 20px;
+    }
+    
+    .Task_today_light h2,
+    .container_light h2,
+    .add_task_light h2 {
+        text-align: center;
+        font-weight: bold;
+        font-size: 25px;
+    }
+    
+    .container_light ul li {
+        border: 2px solid transparent;
+        background-color: rgb(139, 195, 245);
+        border-radius: 40px;
+        margin: 20px 10px 20px 10px;
+        width: 50%;
+        margin-left: 25%;
+    }
+    
+    .container_light ul li h3 {
+        font-size: 30px;
+        font-weight: bold;
+    }
+    
+    .container_light ul li h4 {
+        font-weight: 900;
+        font-size: 20px;
+    }
+    
+    .container_light ul li p {
+        font-weight: 700;
+        font-size: 15px;
+    }
+    
+    .container_light ul li:hover {
+        background-color: rgb(93, 178, 252);
+    }
+    
+    .task_light {
+        text-align: center;
+    }
+    
+    .form_light input {
+        margin: 50px 20% 20% 0px;
+        font-family: "Vibur", sans-serif;
+        font-size: 25px;
+        font-weight: 800;
+        background-color: transparent;
+        border: none;
+        border-bottom: 2px solid rgb(33, 150, 252);
+        color: rgb(30, 146, 247);
+    }
+    
+    .form_light textarea:focus,
+    input:focus {
+        outline: none;
+    }
+    
+    .form_light input::placeholder {
+        /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: rgb(33, 150, 252);
+        opacity: 1;
+        /* Firefox */
+    }
+    
+    .form_light button {
+        margin-left: 30%;
+        background-color: transparent;
+        border: 2px solid rgb(33, 150, 252);
+        border-radius: 40px;
+        color: rgb(33, 150, 252);
+        padding: 20px;
+        font-size: 20px;
+        box-shadow: 2px 2px 2px 2px rgb(33, 150, 252);
+    }
+    
+    .form_light button:focus {
+        box-shadow: 1px 1px 1px 1px rgb(33, 150, 252);
+        color: black;
+    }
